@@ -1,0 +1,28 @@
+.nav-main{
+    background-image:rgb(255, 255, 255);
+}
+.iconBlock{
+    display:grid;
+    text-align: left;
+    padding-right: 45%;
+}
+.icon{
+    text-align: left;
+    width: 10%;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+    font-size: 22px;
+    gap: 5%;
+    text-decoration: none;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    color: brown;
+    padding:1%;
+}
+.nav-list a{
+    text-decoration: none;
+    color: brown;
+}
+
