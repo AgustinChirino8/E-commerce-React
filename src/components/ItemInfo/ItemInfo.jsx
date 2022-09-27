@@ -1,12 +1,12 @@
 import React from "react";
-import "./ItemDetail.css";
+import ItemDetail from "../ItemDetail/ItemDetail";
+
 
 export const ItemDetail = ({ data }) => {
   return (
     <div className="bloque">
-      <img className="detailImage" src={data.image} alt="cafe" />
       <h2>{data.name}</h2>
-      <h3>{data.detail}</h3>
+      <p>{data.id}</p>
     </div>
   );
 };
