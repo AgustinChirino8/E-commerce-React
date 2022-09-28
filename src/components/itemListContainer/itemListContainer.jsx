@@ -29,7 +29,7 @@ export const ItemListContainer = () => {
   };
   return (
     <>
-      <div className="bloque"><ItemCount initial={1} stock={5} onAdd={onAdd} /></div>
+      <ItemCount initial={1} stock={5} onAdd={onAdd} />
       <ItemList data={data} />
     </>
   );

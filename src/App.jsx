@@ -9,6 +9,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+
 function App({ texto }) {
   return (
     <>
@@ -27,7 +28,7 @@ function App({ texto }) {
                 </div>
               }
             />
-            <Route path="/detalle" element={<ItemDetailContainer />} />
+            <Route path="/detalle/:id" element={<ItemDetailContainer />} />
           </Routes>
         </div>
       </BrowserRouter>

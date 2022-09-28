@@ -2,12 +2,16 @@ import React from "react";
 import "./ItemDetail.css";
 
 export const ItemDetail = ({ data }) => {
+  console.log(data);
   return (
-    <div className="bloque">
-      <img className="detailImage" src={data.image} alt="cafe" />
-      <h2>{data.name}</h2>
-      <h3>{data.detail}</h3>
-    </div>
+    <>
+      <div className="bloque">
+        <h4>{data.name}</h4>
+        <div className="detailimage">
+          <img src={data.image} alt="cafe" />
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import productos from "../../data/products";
+import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
+  const {id} = useParams()
   const [data, setData] = useState({});
   useEffect(() => {
-    const getData = new Promise(resolve => {
-      setTimeout(() => {
-        resolve(productos);
-      }, 1000);
-    });
-    getData.then(res => setData(res));
-  }, {})
-  return( <ItemDetail data={data} />);
+    setData(productos.filter(prod => prod.id == id))
+  }, [])
+  return(<ItemDetail data={data}/>);
 };
 
 export default ItemDetailContainer;
