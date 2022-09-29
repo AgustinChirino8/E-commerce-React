@@ -9,7 +9,7 @@ export const ItemDetailContainer = () => {
   useEffect(() => {
     setData(productos.filter(prod => prod.id == id))
   }, [])
-  return(<ItemDetail data={data}/>);
+  return(productos.map(data => <ItemDetail key={data.id} data={data} />));
 };
 
 export default ItemDetailContainer;
