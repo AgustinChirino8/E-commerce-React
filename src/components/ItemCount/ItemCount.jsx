@@ -9,6 +9,7 @@ export const ItemCount = ({initial ,stock , onAdd}) => {
     const augment = () =>{
         setCount (count + 1);
     }
+    
   return (
     <div className="boton">
         <div className="boton1">
